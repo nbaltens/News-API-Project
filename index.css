@@ -20,20 +20,6 @@ ul {
 
 
 
-#searchbox {
-    display: block;
-
-    border-radius: 7px;
-    height: 28px;
-    width: 300px; 
-    min-width: 200px;
-    margin: 20px auto;
-    font-family: 'Raleway', sans-serif;
-    padding-left: 8px;
-
-}
-
-
 /* NAVBAR */
 
 .navBar {
@@ -43,8 +29,10 @@ ul {
 }
 .navLogo {
     float: left;
-    padding: 10px 10px;
+    padding: 20px 10px;
+    cursor: pointer;
 }
+
 
 /* IMAGE DROP */
 
@@ -72,6 +60,16 @@ ul {
 .imgDrop input {
     font-size: 20px;
     color: black;
+}
+#searchbox {
+    display: block;
+    border-radius: 7px;
+    height: 28px;
+    width: 300px; 
+    min-width: 200px;
+    margin: 20px auto;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 8px;
 }
 
 /* ARTICLES */
@@ -133,10 +131,41 @@ ul {
     color: #656565;
 }
 
+/* MEDIA */
 
+@media only screen and (max-width: 800px) {
+    #article li {
+        width: 100%;
+    }
+    .imgDrop {
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+      .articleContainer {
+          display: block;
+          width: 100%;
+          padding: 0;
+          position: relative;
 
+      }
+      .articleTitle {
+          width: 160%;
+          
+      }
+      .newsImg {
+          height: 250px;
+          width: 100%;
+          margin: 0;
+      }
+      .articleDesc {
+          width: 160%;
+          margin-bottom: 10px;
+      }
+      .articleLink {
+          position: absolute;
+          bottom: -25px;
+          right: 5px;
+      }
 
-
-
-
-
+  }
